@@ -11,7 +11,6 @@ for (let dia = 1; dia <= 10; dia++) {
         xpStatus[i] += xpPorDia[i];
     }
 }
-// Agora que os 10 dias acabaram, vamos ver os níveis:
 for (let i = 0; i < herois.length; i++) {
     let nome = herois[i];
     let xpFinal = xpStatus[i];
