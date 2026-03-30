@@ -7,13 +7,13 @@ let xpPorDia = [200, 1500, 450, 1100, 50, 850, 950, 700];
 
 //10 Dias upando na dungeon
 for (let dia = 1; dia <= 10; dia++) {
-    for (let i = 0; i < herois.length; i++) {
-        xpStatus[i] += xpPorDia[i];
+    for (let xpDoDia = 0; xpDoDia < herois.length; xpDoDia++) {
+        xpStatus[xpDoDia] += xpPorDia[xpDoDia];
     }
 }
-for (let i = 0; i < herois.length; i++) {
-    let nome = herois[i];
-    let xpFinal = xpStatus[i];
+for (let xpDoDia = 0; xpDoDia < herois.length; xpDoDia++) {
+    let nome = herois[xpDoDia];
+    let xpFinal = xpStatus[xpDoDia];
     let rank = "";
 
     // xpFinal
